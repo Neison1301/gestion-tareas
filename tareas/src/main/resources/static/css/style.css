@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 56px; /* Ajuste para navbar fija si se usa fixed-top */
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 20px; /* Espacio debajo del navbar */
+    padding-bottom: 20px;
+}
+
+.task-card {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    /* Si no es fixed-top, puedes quitar padding-top del body y el margin-bottom aquí */
+    /* margin-bottom: 20px; */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0,0,0,.1);
+    width: 100%;
+}
+
+.table-responsive thead th {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary, .btn-warning, .btn-danger, .btn-info, .btn-success {
+    margin-right: 5px;
+    margin-bottom: 5px; /* Para mejor espaciado en móviles */
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+.modal-header.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para la página de agregar/editar tarea */
+.task-form-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.task-form-container h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Ajustes para que el contenido no se solape con un navbar fixed-top */
+body.with-fixed-navbar {
+    padding-top: 70px; /* Ajusta este valor al alto de tu navbar */
+}
